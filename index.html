@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Space</title>
+  <style>
+    body {
+background-image:url("img/cosmo.jpg");
+background-attachment:fixed;
+background-size:100%;
+background-repeat:no-repeat;
+}
+</style>
+</head>
+
+
+<body>
+  <header>
+    <img src="img/spacex.png" alt="Logo Spacep2">
+  </header>
+  <main class="main">
+
+    <div class="newPost">
+
+      <div class="infoUser">
+        <div class="imgUser">
+        </div>
+        <strong>Nathan</strong>
+      </div>
+
+      <form action="" class="formPost" id="formPost">
+        <textarea name="textarea" placeholder="Vamos decolar hoje? " id="textarea"></textarea>
+        <div class="iconsAndButton">
+          <div class="icons">
+            <button class="btnFileForm">
+              <img src="./assets/img.svg" alt="Adicione uma imagem">
+            </button>
+            <button class="btnFileForm">
+              <img src="./assets/gif.svg" alt="Adicione um gif">
+            </button>
+            <button class="btnFileForm">
+              <img src="./assets/video.svg" alt="Adicione um vídeo">
+            </button>
+          </div>
+
+          <button type="submit" id="botao" class="btnSubmitForm">Publicar</button>
+        </div>
+      </form>
+    </div>
+
+    <ul class="posts" id="posts"></ul>
+
+  </main>
+  <script type="module" src="/Controllers/Form/FormPost.js"></script>
+</body>
+
+</html>
